@@ -10,34 +10,43 @@
     "aaron-bond.better-comments",
     "streetsidesoftware.code-spell-checker",
     "visualstudioexptteam.vscodeintellicode",
+
     // themes & icons
     "antfu.icons-carbon",
     "antfu.theme-vitesse",
     "vscode-icons-team.vscode-icons",
+
     // frontend lint
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
     "stylelint.vscode-stylelint",
+
     // vue3
     "johnsoncodehk.volar",
+
     // vue2
     "octref.vetur",
+
     // css
     "naumovs.color-highlight",
     "pranaygp.vscode-css-peek",
     "voorjaar.windicss-intellisense",
+
     // python
     "almenon.arepl",
     "ms-python.python",
     "njpwerner.autodocstring",
+
     // golang
     "golang.go",
+
     // markdown
     "yzhang.markdown-all-in-one",
     "davidanson.vscode-markdownlint",
+
     // DevOps
     "mikestead.dotenv",
     "ms-azuretools.vscode-docker",
+    "ms-vscode-remote.remote-ssh",
     "ms-vscode-remote.remote-containers",
   ]
 }
