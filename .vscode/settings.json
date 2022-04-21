@@ -19,7 +19,10 @@
     "source.fixAll.stylelint": true, // allow Stylelint to auto fix on save
     "source.organizeImports": false,
   },
-  "editor.rulers": [80, 100],
+  "editor.rulers": [
+    { "column": 80, "color": "#fcd33729"},
+    { "column": 100, "color": "#ed5a6529"},
+  ],
   "editor.linkedEditing": true,
 
   "explorer.confirmDelete": false,
