@@ -2,6 +2,7 @@
   "recommendations": [
     // universal
     "kiteco.kite",
+    "vscodevim.vim",
     "github.copilot",
     "usernamehw.errorlens",
     "gruntfuggly.todo-tree",
@@ -29,6 +30,7 @@
     // css
     "naumovs.color-highlight",
     "pranaygp.vscode-css-peek",
+    "antfu.unocss",
     "voorjaar.windicss-intellisense",
 
     // python

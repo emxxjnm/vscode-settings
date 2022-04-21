@@ -9,7 +9,7 @@
   "editor.glyphMargin": true,
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
-  "editor.lineNumbers": "interval",
+  "editor.lineNumbers": "relative",
   "editor.renderWhitespace": "boundary",
   "editor.suggestSelection": "first",
   "editor.unicodeHighlight.invisibleCharacters": false,
@@ -19,7 +19,7 @@
     "source.fixAll.stylelint": true, // allow Stylelint to auto fix on save
     "source.organizeImports": false,
   },
-  "editor.rulers": [80,120],
+  "editor.rulers": [80, 100],
   "editor.linkedEditing": true,
 
   "explorer.confirmDelete": false,
@@ -54,7 +54,8 @@
   "files.simpleDialog.enable": true,
   "files.trimTrailingWhitespace": true,
   "files.associations": {
-    "*.vue": "vue"
+    "*.vue": "vue",
+    "*.py": "python"
   },
 
   "git.autofetch": true,
@@ -92,7 +93,10 @@
     "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true,
     "**/tmp": true,
-    "**/yarn.lock": true
+    "**/yarn.lock": true,
+
+    "**/__pycache__/**": true,
+    "**/migrations/**": true,
   },
 
   "[python]": {
@@ -110,7 +114,7 @@
   "emmet.triggerExpansionOnTab": false,
   "css.lint.hexColorLength": "ignore",
 
-  // usernamehw.errorlens
+  // figmehw.errorlens
   "errorLens.enabledDiagnosticLevels": [
     "warning",
     "error"
@@ -155,6 +159,9 @@
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "gitlens.defaultTimeFormat": "HH:mm:ss",
+  "gitlens.defaultDateShortFormat": "YYYY-MM-DD",
   "gitlens.menus": {
     "editor": {
       "blame": false,
@@ -275,6 +282,81 @@
     "less",
     "html",
     "postcss"
+  ],
+
+  // vscodevim.vim
+  "vim.leader": "<space>",
+  "vim.sneak": true,
+  "vim.ignorecase": true,
+  "vim.incsearch": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+        "before": [">"],
+        "commands": ["editor.action.indentLines"]
+    },
+    {
+        "before": ["<"],
+        "commands": ["editor.action.outdentLines"]
+    },
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "c"],
+      "after": ["%"],
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<leader>", "<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["n", "w"],
+      "after": ["<C-w>", "<C-w>"]
+    },
+    {
+      "before": ["l", "w"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["h", "w"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["j", "w"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["k", "w"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["E"],
+      "after": ["g", "T"],
+    },
+    {
+      "before": ["R"],
+      "after": ["g", "t"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
   ],
 
   // ----- language -----
