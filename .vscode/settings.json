@@ -58,7 +58,9 @@
   "files.trimTrailingWhitespace": true,
   "files.associations": {
     "*.vue": "vue",
-    "*.py": "python"
+    "*.py": "python",
+    "*.ts": "typescript",
+    "*.go": "go"
   },
 
   "git.autofetch": true,
@@ -212,7 +214,6 @@
   // johnsoncodehk.volar
   "volar.autoCompleteRefs": false,
   "volar.codeLens.pugTools": false,
-  "volar.formatting.printWidth": 80,
   "volar.codeLens.scriptSetupTools": true,
   "volar.completion.preferredTagNameCase": "pascal",
   "volar.takeOverMode.enabled": true,
@@ -292,7 +293,6 @@
   "vim.sneak": true,
   "vim.ignorecase": true,
   "vim.incsearch": true,
-  "vim.camelCaseMotion.enable": true,
   "vim.easymotion": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
@@ -321,32 +321,8 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
-    {
-      "before": ["<leader>", "<leader>", "w"],
+      "before": ["<leader>", "w"],
       "commands": ["workbench.action.files.save"]
-    },
-    {
-      "before": ["n", "w"],
-      "after": ["<C-w>", "<C-w>"]
-    },
-    {
-      "before": ["l", "w"],
-      "after": ["<C-w>", "l"]
-    },
-    {
-      "before": ["h", "w"],
-      "after": ["<C-w>", "h"]
-    },
-    {
-      "before": ["j", "w"],
-      "after": ["<C-w>", "j"]
-    },
-    {
-      "before": ["k", "w"],
-      "after": ["<C-w>", "k"]
     },
     {
       "before": ["E"],
